@@ -1,0 +1,200 @@
+/* -------------------------default------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --light_gray: #333333;
+  --dark_gray: #252525;
+  --sky_blue: #30b1ba;
+  --sky_blue_light: #8bd3d8;
+  --nav_height: 80px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "roboto", sans-serif;
+}
+a {
+  color: white;
+}
+li {
+  list-style: none;
+}
+.heading {
+  padding-top: var(--nav_height);
+  width: 100%;
+  text-align: center;
+}
+.heading > h1 {
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--sky_blue);
+}
+.sub_heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sub_heading > h1 {
+  color: var(--sky_blue);
+  font-weight: 400;
+  font-size: 48px;
+}
+/* ------------------navbar----------------- */
+header {
+  position: fixed;
+  height: var(--nav_height);
+  width: 100%;
+  background-color: var(--dark_gray);
+  z-index: 2;
+}
+header > ul {
+  margin: 0 auto;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header > ul > li > a {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--sky_blue);
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+header > ul > li:hover > a {
+  color: white;
+  border-bottom: 3px solid var(--sky_blue);
+}
+/* ------------------navbar----------------- */
+/* -------------home------------------- */
+.home {
+  min-height: 100vh;
+  background-color: var(--light_gray);
+  display: flex;
+  align-items: center;
+}
+.home_container {
+  width: 1000px;
+  margin: 0 auto;
+
+  columns: 2;
+}
+.intro > * {
+  margin-bottom: 20px;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 0;
+}
+.intro .hey {
+  font-size: 48px;
+  color: white;
+}
+.intro .name {
+  font-size: 64px;
+  color: var(--sky_blue);
+  font-weight: 600;
+}
+.intro .post {
+  font-size: 36px;
+  color: white;
+  margin-bottom: 30px;
+}
+.intro .resume {
+  width: 164px;
+  height: 48px;
+  background-color: var(--sky_blue);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-radius: 10px;
+}
+/* -------------home------------------- */
+
+/* --------------------do what you love------------- */
+.dwyl {
+  position: relative;
+}
+.dwyl_container {
+  position: absolute;
+  width: 1000px;
+  height: 300px;
+  background-color: var(--light_gray);
+  box-shadow: 3px 2px 4px 7px rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dwyl_container blockquote {
+  font-size: 64px;
+}
+/* --------------------do what you love------------- */
+/* -----------------about section---------------- */
+.about {
+  min-height: 100vh;
+  background-color: var(--dark_gray);
+}
+.about_container {
+  width: 1000px;
+  padding: 50px;
+  background-color: var(--light_gray);
+  margin: 40px auto;
+  border-radius: 10px;
+}
+.about_container > p {
+  font-size: 24px;
+  color: white;
+  line-height: 36px;
+}
+.skills_container {
+  columns: 2;
+  width: 1000px;
+  margin: auto;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--light_gray);
+  height: 124px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.skill_title {
+  color: white;
+  font-size: 30px;
+}
+
+.progressbar_container {
+  background-color: white;
+  width: 80%;
+  border-radius: 15px;
+}
+.progressbar {
+  background-color: var(--sky_blue_light);
+  color: white;
+  padding: 7px;
+  text-align: right;
+  font-size: 10px;
+  border-radius: 15px;
+  width: 40%;
+}
+/* ------------------about
